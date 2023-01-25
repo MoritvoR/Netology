@@ -3,9 +3,7 @@ class Student:
     def __init__(self, name, surname):
         self.name = name
         self.surname = surname
-        self.finished_courses = []
-        self.courses_in_progress = []
-        self.grades = {}
+        self.courses = []
 
 
 class Mentor:
@@ -20,12 +18,7 @@ class Lecturer(Mentor):
 
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student):
-            if course in self.courses_attached and\
-                    course in student.courses_in_progress:
-                if course in student.grades:
-                    student.grades[course] += [grade]
-                else:
-                    student.grades[course] = [grade]
+            pass
         else:
             return 'Ошибка'
 
@@ -34,11 +27,18 @@ class Reviewer(Mentor):
     pass
 
 
-best_student = Student('Ruoy', 'Eman', 'your_gender')
-best_student.courses_in_progress += ['Python']
+best_student = Student('Vasia', 'Pupkin')
+best_student.courses += ['Python', 'Git']
+suck_student = Student('Some', 'Budy')
+suck_student.courses += ['Git', 'Python']
 
-cool_mentor = Mentor('Some', 'Buddy')
-cool_mentor.courses_attached += ['Python']
+cool_lector = Lecturer('Once', 'Toldme')
+cool_lector.courses_attached += ['Python']
+suck_lector = Lecturer('The', 'World')
+suck_lector.courses_attached += ['Git']
 
-my_lecturer = Lecturer('Вася', 'Пупкин')
-my_lecturer.rate_hw(best_student, )
+cool_reviewer = Reviewer('Is', 'Gonna')
+cool_reviewer.courses_attached += ['Git']
+suck_reviewer = Reviewer('Roll', 'Me')
+suck_reviewer.courses_attached += ['Python']
+
