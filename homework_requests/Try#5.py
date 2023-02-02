@@ -16,15 +16,13 @@ class YaUploader:
             response = requests.put(url=href, data=file)
             if response.status_code == 201:
                 print("Mission complete! :-) ")
-                return None
             else:
                 print('Alarm! Alarm! Какая-то ошибка! :-|')
-                return None
 
 
 if __name__ == '__main__':
-    my_token = 'y0_AgAAAAAWHDuNAADLWwAAAADbUSy5AsuaGXp1QMakBiv8qdr4pCKbV4M'
-    path_on_yadisk = '/homework/Ошибка_параллели.docx'
-    path_on_computer = 'D:/Книга_1/Ошибка_параллели.docx'
+    my_token = '...'
+    path_on_yadisk = '...'
+    path_on_computer = '...'
     uploader = YaUploader(my_token)
     uploader.upload(path_yadisk=path_on_yadisk, path_computer=path_on_computer)
