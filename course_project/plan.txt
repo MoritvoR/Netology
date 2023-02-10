@@ -1,5 +1,6 @@
 Ввод:
 - id приложения вк ( 51546300 )
+my_id = '13761314'
 - токен вк фото (url = 'https://oauth.vk.com/authorize'
                 params = {'client_id': '51546300',
                     'redirect_uri': 'https://oauth.vk.com/blank.html',
@@ -9,7 +10,7 @@
                     'v': '5.131',
                     'state': '123456'})
 access_token = vk1.a.M_oBcOXT2-laBeRZYmohVD2FomiKJ2d_0i_W5xF3qlB1unGBDFIn8nFwY90KXU8J6zxv-tA0AO5SMpDUvuggnbc3tCf7T2ySM-mfWcy330TRYKLftcjfZz0qvkiOdIoHxd7zW-TnjVG0m1LdJ3Q3mtcTrynMejn2fM56AD1ngoq-tGhBA6QFWqHlEkB9lnqIZ3lzgwfMNg4pk0K-yS60FA
-- токен с yadisk
+- токен с yadisk ( y0_AgAAAAAWHDuNAADLWwAAAADbUSy5AsuaGXp1QMakBiv8qdr4pCKbV4M )
 
 Вывод:
 1. json-файл с информацией по файлу:
