@@ -6,5 +6,9 @@ params = {'path': '/vk_photo'}
 response = requests.put(url=url_for_upload, headers=headers, params=params)
 print(response.json().get('message'))'''
 import time
-print(time.gmtime(1549543751))
-
+from tqdm import tqdm
+#print(time.gmtime(1549543751))
+i = 0
+tqdm(while i < 20):
+    time.sleep(0.2)
+    i += 1

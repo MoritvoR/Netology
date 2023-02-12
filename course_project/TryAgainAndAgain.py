@@ -4,39 +4,69 @@ from tqdm import tqdm
 import time
 
 
-def create_folder(my_ya_token: str, name_folder: str):
-    """Create new folder on Yandex Disk"""
-    url_for_upload = 'https://cloud-api.yandex.net/v1/disk/resources'
-    headers = {'Authorization': f'OAuth {my_ya_token}', 'Content-Type': 'application/json'}
-    params = {'path': f'/{name_folder}'}
-    response = requests.put(url=url_for_upload, headers=headers, params=params)
-    if response.status_code == 201:
-        print(f'Папка {name_folder} на Я.Диске создана успешно')
-        return None
-    else:
-        print(response.json().get('message'))
-        return None
+class YandexMovements:
+    def __init__(self, token):
+        self.token = token
+        self.headers = {'Authorization': f'OAuth {token}', 'Content-Type': 'application/json'}
+        self.url_for_upload = 'https://cloud-api.yandex.net/v1/disk/resources'
+
+    def create_folder(self, name_folder: str):
+        """Create new folder on Yandex Disk.
+        Return None"""
+        params = {'path': f'/{name_folder}'}
+        response = requests.put(url=self.url_for_upload, headers=self.headers, params=params)
+        if response.status_code == 201:
+            print(f'Папка {name_folder} на Я.Диске создана успешно')
+            return None
+        else:
+            print(response.json().get('message'))
+            return None
+
+    def upload_to_disk(self, file_urls: list, file_names, name_folder: str):
+        '''Upload file on Yandex Disk
+        Return None'''
+        for file in tqdm(range(len(file_urls))):
+            url = file_urls[file]
+            name = file_names[file]['file_name']
+            path_on_yadisk = f'/{name_folder}/{name}'
+            params = {'path': path_on_yadisk, 'url': url}
+            response = requests.post(url=self.url_for_upload, params=params, headers=self.headers)
+            if response.status_code != 202:
+                print(f'При загрузке файла {name} произошла ошибка {response.status_code}: '
+                      f'{response.json().get("message")}')
+                return None
+            return None
 
 
-def get_info_vk(my_vk_token: str, my_id_vk: str, photo_counter: int):
-    """Get information about photo in profile VK.
-    Create json-file 'readme.json' with name and size photos.
-    Return list photos url.
-    Version API VK 5.131"""
-    print('Get information about photo in VK')
-    url = 'https://api.vk.com/method/photos.get'
-    params = {
-        'owner_id': f'{my_id_vk}',
-        'album_id': 'profile',
-        'rev': 1,
-        'extended': 1,
-        'count': photo_counter,
-        'v': '5.131'
-    }
-    headers = {'Authorization': f'Bearer {my_vk_token}', 'Content-Type': 'multipart/form-data'}
-    response = requests.get(url=url, params=params, headers=headers)
-    if response.status_code == 200:
-        response = response.json()
+class Vk:
+    def __init__(self, token, id_target_vk):
+        self.get_photo_url = 'https://api.vk.com/method/photos.get'
+        self.id_vk = id_target_vk
+        self.token = token
+        self.headers = {'Authorization': f'Bearer {token}', 'Content-Type': 'multipart/form-data'}
+
+    def _create_name_photo(self, photo_list):
+        """Create list photo's name and size"""
+        '''for i in tqdm(range(1, len(photo_list))):
+            if photo_name == photo_list[i]['file_name']:
+                photo_list[i]['file_name'] = f'{photo_list[i]["date"]}.{photo_list[i]["file_name"]}'
+                photo_name = photo_list[i]['file_name']
+            else:
+                photo_list[i]['file_name'] = f'{photo_list[i]["file_name"]}'
+        return photo_list'''
+        i = 0
+        while i < len(photo_list):
+            photo_name = photo_list[i]['file_name']
+            for k in range(i+1, len(photo_list)):
+                if photo_name == photo_list[k]['file_name']:
+                    photo_list[k]['file_name'] = f'{photo_list[k]["date"]}.{photo_list[k]["file_name"]}'
+                    photo_list[i]['file_name'] = f'{photo_list[i]["date"]}.{photo_list[i]["file_name"]}'
+            i += 1
+        return photo_list
+
+    def _create_json_file(self, response):
+        '''Create json-file "photo_vk_info.json" with information
+        about photos'''
         photo_info = []
         all_photo_url = []
         for items in tqdm(response['response']['items']):
@@ -56,38 +86,31 @@ def get_info_vk(my_vk_token: str, my_id_vk: str, photo_counter: int):
                     }
             photo_info.append(my_dict)
             all_photo_url.append(file_url)
-        photo_info = create_name_photo(photo_info)
-        with open('readme.json', 'w', encoding='utf-8') as file:
+        photo_info = self._create_name_photo(photo_info)
+        with open('photo_vk_info.json', 'w', encoding='utf-8') as file:
             json.dump(photo_info, file, indent=4)
         return all_photo_url, photo_info
-    else:
-        print('При получении информации о фото из VK произошла ошибка.\nПроверьте правильность введённых данных.')
-        return None
 
-
-def create_name_photo(photo_list):
-    """Create list photo's name and size"""
-    print("Create list photo's name and size")
-    photo_name = photo_list[0]['file_name']
-    for i in tqdm(range(1, len(photo_list))):
-        if photo_name == photo_list[i]['file_name']:
-            photo_list[i]['file_name'] = f'{photo_list[i]["date"]}.{photo_list[i]["file_name"]}'
-            photo_name = photo_list[i]['file_name']
+    def get_info_vk(self, photo_counter: int):
+        """Get information about photo in profile VK.
+        Create json-file 'photo_vk_info.json'.
+        Return list photos url and list photo information.
+        Version API VK 5.131"""
+        params = {
+            'owner_id': f'{self.id_vk}',
+            'album_id': 'profile',
+            'rev': 1,
+            'extended': 1,
+            'count': photo_counter,
+            'v': '5.131'
+        }
+        response = requests.get(url=self.get_photo_url, params=params, headers=self.headers)
+        if response.status_code == 200:
+            photo_url_list, photo_information = self._create_json_file(response.json())
+            return photo_url_list, photo_information
         else:
-            photo_list[i]['file_name'] = f'{photo_list[i]["file_name"]}'
-    return photo_list
-
-
-def upload_to_yadisk(token: str, file_urls: list, file_names, name_folder: str):
-    url_for_upload = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
-    headers = {'Authorization': 'OAuth %s' % token, 'Content-Type': 'application/json'}
-    for file in tqdm(range(len(file_urls))):
-        url = file_urls[file]
-        name = file_names[file]['file_name']
-        path_on_yadisk = f'/{name_folder}/{name}'
-        params = {'path': path_on_yadisk, 'url': url}
-        response = requests.post(url=url_for_upload, params=params, headers=headers)
-        print(response)
+            print('При получении информации о фото из VK произошла ошибка.\nПроверьте правильность введённых данных.')
+            return None, None
 
 
 if __name__ == '__main__':
@@ -101,8 +124,11 @@ if __name__ == '__main__':
     name_new_folder = 'vk'
     #count_photo = int(input('Введите сколько последних фотографий необходимо загрузить : '))
     count_photo = 5
-    photo_url, photo_info = get_info_vk(vk_token, id_vk, count_photo)
+    '''photo_url, photo_inf = get_info_vk(vk_token, id_vk, count_photo)
     create_folder(ya_token, name_new_folder)
-    upload_to_yadisk(ya_token, photo_url, photo_info, name_new_folder)
-
-
+    upload_to_yadisk(ya_token, photo_url, photo_inf, name_new_folder)'''
+    get_photo_vk = Vk(vk_token, id_vk)
+    upload_photo_disk = YandexMovements(ya_token)
+    photos_url, photos_inf = get_photo_vk.get_info_vk(count_photo)
+    upload_photo_disk.create_folder(name_new_folder)
+    upload_photo_disk.upload_to_disk(photos_url, photos_inf, name_new_folder)
