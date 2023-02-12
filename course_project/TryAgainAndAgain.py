@@ -115,9 +115,6 @@ if __name__ == '__main__':
     id_vk = input('Введите id пользователя из VK : ')
     name_new_folder = input('Введите имя новой папки на Я.Диске для фото из VK : ')
     count_photo = int(input('Введите сколько последних фотографий необходимо загрузить : '))
-    '''photo_url, photo_inf = get_info_vk(vk_token, id_vk, count_photo)
-    create_folder(ya_token, name_new_folder)
-    upload_to_yadisk(ya_token, photo_url, photo_inf, name_new_folder)'''
     get_photo_vk = Vk(vk_token, id_vk)
     upload_photo_disk = YandexMovements(ya_token)
     photos_url, photos_inf = get_photo_vk.get_info_vk(count_photo)
