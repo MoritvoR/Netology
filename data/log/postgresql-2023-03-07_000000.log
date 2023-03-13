@@ -1,0 +1,835 @@
+2023-03-08 22:47:09.650 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: immediate force wait
+2023-03-08 22:47:10.281 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 4 (0.0%); добавлено файлов WAL 1, удалено: 0, переработано: 0; запись=0.003 сек., синхр.=0.169 сек., всего=0.632 сек.; синхронизировано_файлов=4, самая_долгая_синхр.=0.109 сек., средняя=0.043 сек.; расстояние=4227 kB, ожидалось=4227 kB
+2023-03-08 22:51:10.087 +07 [8068] РћРЁРР‘РљРђ:  Р±Р°Р·Р° РґР°РЅРЅС‹С… "homework" СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚
+2023-03-08 22:51:10.087 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 22:51:23.733 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "NOT") (СЃРёРјРІРѕР» 20)
+2023-03-08 22:51:23.733 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE IF NOT EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 22:52:09.282 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-08 22:52:10.129 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "IF") (СЃРёРјРІРѕР» 26)
+2023-03-08 22:52:10.129 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE homework IF NOT EXISTS
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 22:52:37.488 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "IF") (СЃРёРјРІРѕР» 1)
+2023-03-08 22:52:37.488 +07 [8068] РћРџР•Р РђРўРћР :  IF NOT EXISTS CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 22:53:21.248 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "NOT") (СЃРёРјРІРѕР» 20)
+2023-03-08 22:53:21.248 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE IF NOT EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 22:53:54.767 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 925 (5.6%); добавлено файлов WAL 0, удалено: 0, переработано: 1; запись=100.007 сек., синхр.=3.470 сек., всего=105.486 сек.; синхронизировано_файлов=249, самая_долгая_синхр.=0.102 сек., средняя=0.014 сек.; расстояние=4227 kB, ожидалось=4227 kB
+2023-03-08 22:54:45.383 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "EXISTS") (СЃРёРјРІРѕР» 20)
+2023-03-08 22:54:45.383 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE IF EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 22:56:36.749 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "NOT") (СЃРёРјРІРѕР» 20)
+2023-03-08 22:56:36.749 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE IF NOT EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 23:04:07.287 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "EXISTS") (СЃРёРјРІРѕР» 20)
+2023-03-08 23:04:07.287 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE IF EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 23:04:19.852 +07 [8068] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "NOT") (СЃРёРјРІРѕР» 20)
+2023-03-08 23:04:19.852 +07 [8068] РћРџР•Р РђРўРћР :  CREATE DATABASE IF NOT EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+		IS_TEMPLATE = False;
+2023-03-08 23:04:30.557 +07 [7248] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-08 23:04:30.557 +07 [5828] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-08 23:04:30.557 +07 [12628] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-08 23:04:30.561 +07 [8068] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-08 23:04:30.603 +07 [5276] СООБЩЕНИЕ:  не удалось получить данные от клиента: An existing connection was forcibly closed by the remote host.
+	
+2023-03-08 23:06:42.082 +07 [20012] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "NOT") (СЃРёРјРІРѕР» 20)
+2023-03-08 23:06:42.082 +07 [20012] РћРџР•Р РђРўРћР :  CREATE DATABASE IF NOT EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		
+2023-03-08 23:07:03.304 +07 [20012] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "NOT") (СЃРёРјРІРѕР» 17)
+2023-03-08 23:07:03.304 +07 [20012] РћРџР•Р РђРўРћР :  CREATE DATABASE NOT IF EXISTS homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		
+2023-03-08 23:07:14.765 +07 [20012] РћРЁРР‘РљРђ:  Р±Р°Р·Р° РґР°РЅРЅС‹С… "homework" СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚
+2023-03-08 23:07:14.765 +07 [20012] РћРџР•Р РђРўРћР :  CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		
+2023-03-08 23:08:26.205 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: immediate force wait
+2023-03-08 23:08:27.998 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 1 (0.0%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=0.001 сек., синхр.=0.019 сек., всего=1.793 сек.; синхронизировано_файлов=1, самая_долгая_синхр.=0.019 сек., средняя=0.019 сек.; расстояние=1 kB, ожидалось=3804 kB
+2023-03-08 23:09:14.403 +07 [20012] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "CREATE") (СЃРёРјРІРѕР» 24)
+2023-03-08 23:09:14.403 +07 [20012] РћРџР•Р РђРўРћР :  DROP DATABASE homework
+	CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+	    IS_TEMPLATE = False;
+		
+2023-03-08 23:09:26.207 +07 [20012] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "CREATE") (СЃРёРјРІРѕР» 25)
+2023-03-08 23:09:26.207 +07 [20012] РћРџР•Р РђРўРћР :  DROP DATABASE homework
+	
+	CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+	    IS_TEMPLATE = False;
+		
+2023-03-08 23:10:15.904 +07 [20012] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "CREATE") (СЃРёРјРІРѕР» 35)
+2023-03-08 23:10:15.904 +07 [20012] РћРџР•Р РђРўРћР :  DROP DATABASE IF EXISTS homework
+	
+	CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+	    IS_TEMPLATE = False;
+		
+2023-03-08 23:13:27.010 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-08 23:15:11.961 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 925 (5.6%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=100.119 сек., синхр.=3.040 сек., всего=104.951 сек.; синхронизировано_файлов=249, самая_долгая_синхр.=0.033 сек., средняя=0.013 сек.; расстояние=4227 kB, ожидалось=4227 kB
+2023-03-08 23:16:34.890 +07 [20012] РћРЁРР‘РљРђ:  CREATE DATABASE РЅРµ РјРѕР¶РµС‚ РІС‹РїРѕР»РЅСЏС‚СЊСЃСЏ РІРЅСѓС‚СЂРё Р±Р»РѕРєР° С‚СЂР°РЅР·Р°РєС†РёРё
+2023-03-08 23:16:34.890 +07 [20012] РћРџР•Р РђРўРћР :  CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+	    IS_TEMPLATE = False;
+		
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64)
+	);
+		
+2023-03-08 23:16:47.841 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: immediate force wait
+2023-03-08 23:16:47.968 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 1 (0.0%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=0.002 сек., синхр.=0.024 сек., всего=0.128 сек.; синхронизировано_файлов=1, самая_долгая_синхр.=0.024 сек., средняя=0.024 сек.; расстояние=1 kB, ожидалось=3805 kB
+2023-03-08 23:16:50.027 +07 [20012] РћРЁРР‘РљРђ:  CREATE DATABASE РЅРµ РјРѕР¶РµС‚ РІС‹РїРѕР»РЅСЏС‚СЊСЃСЏ РІРЅСѓС‚СЂРё Р±Р»РѕРєР° С‚СЂР°РЅР·Р°РєС†РёРё
+2023-03-08 23:16:50.027 +07 [20012] РћРџР•Р РђРўРћР :  CREATE DATABASE homework
+		WITH
+		OWNER = postgres
+		ENCODING = 'UTF8'
+		CONNECTION LIMIT = -1
+	    IS_TEMPLATE = False;
+		
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64)
+	);
+		
+2023-03-08 23:21:47.982 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-08 23:23:32.693 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 925 (5.6%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=99.866 сек., синхр.=3.056 сек., всего=104.711 сек.; синхронизировано_файлов=249, самая_долгая_синхр.=0.097 сек., средняя=0.013 сек.; расстояние=4227 kB, ожидалось=4227 kB
+2023-03-13 20:33:46.209 +07 [15876] РћРЁРР‘РљРђ:  Р±Р°Р·Р° РґР°РЅРЅС‹С… "test" Р·Р°РЅСЏС‚Р° РґСЂСѓРіРёРјРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏРјРё
+2023-03-13 20:33:46.209 +07 [15876] РџРћР”Р РћР‘РќРћРЎРўР:  Р­С‚Р° Р±Р°Р·Р° РґР°РЅРЅС‹С… РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РµС‰С‘ РІ 3 СЃРµР°РЅСЃР°С….
+2023-03-13 20:33:46.209 +07 [15876] РћРџР•Р РђРўРћР :  DROP DATABASE IF EXISTS test;
+	
+2023-03-13 20:34:37.995 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: immediate force wait
+2023-03-13 20:34:38.102 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 1 (0.0%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=0.002 сек., синхр.=0.022 сек., всего=0.107 сек.; синхронизировано_файлов=1, самая_долгая_синхр.=0.022 сек., средняя=0.022 сек.; расстояние=1 kB, ожидалось=3805 kB
+2023-03-13 20:39:37.106 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-13 20:39:39.111 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 2 (0.0%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=0.108 сек., синхр.=0.164 сек., всего=2.006 сек.; синхронизировано_файлов=2, самая_долгая_синхр.=0.137 сек., средняя=0.082 сек.; расстояние=0 kB, ожидалось=3424 kB
+2023-03-13 23:19:45.814 +07 [16484] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "DROP") (СЃРёРјРІРѕР» 8)
+2023-03-13 23:19:45.814 +07 [16484] РћРџР•Р РђРўРћР :  BEGIN
+	
+	DROP TABLE IF EXISTS genre
+	DROP TABLE IF EXISTS performer
+	DROP TABLE IF EXISTS genre_performer
+	DROP TABLE IF EXISTS album
+	DROP TABLE IF EXISTS performer_album
+	DROP TABLE IF EXISTS track_list
+	DROP TABLE IF EXISTS collection
+	DROP TABLE IF EXISTS collection_track_list
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		perfofmer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:20:30.356 +07 [16484] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "DROP") (СЃРёРјРІРѕР» 28)
+2023-03-13 23:20:30.356 +07 [16484] РћРџР•Р РђРўРћР :  DROP TABLE IF EXISTS genre
+	DROP TABLE IF EXISTS performer
+	DROP TABLE IF EXISTS genre_performer
+	DROP TABLE IF EXISTS album
+	DROP TABLE IF EXISTS performer_album
+	DROP TABLE IF EXISTS track_list
+	DROP TABLE IF EXISTS collection
+	DROP TABLE IF EXISTS collection_track_list
+	
+	BEGIN
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		perfofmer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:22:50.036 +07 [16484] РћРЁРР‘РљРђ:  РѕС€РёР±РєР° СЃРёРЅС‚Р°РєСЃРёСЃР° (РїСЂРёРјРµСЂРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ: "DROP") (СЃРёРјРІРѕР» 8)
+2023-03-13 23:22:50.036 +07 [16484] РћРџР•Р РђРўРћР :  BEGIN
+	
+	DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		perfofmer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:23:00.721 +07 [16484] РћРЁРР‘РљРђ:  СѓРєР°Р·Р°РЅРЅС‹Р№ РІ РєР»СЋС‡Рµ СЃС‚РѕР»Р±РµС† "performer_id" РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ (СЃРёРјРІРѕР» 910)
+2023-03-13 23:23:00.721 +07 [16484] РћРџР•Р РђРўРћР :  BEGIN;
+	
+	DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		perfofmer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:23:33.457 +07 [16484] РћРЁРР‘РљРђ:  С‚РµРєСѓС‰Р°СЏ С‚СЂР°РЅР·Р°РєС†РёСЏ РїСЂРµСЂРІР°РЅР°, РєРѕРјР°РЅРґС‹ РґРѕ РєРѕРЅС†Р° Р±Р»РѕРєР° С‚СЂР°РЅР·Р°РєС†РёРё РёРіРЅРѕСЂРёСЂСѓСЋС‚СЃСЏ
+2023-03-13 23:23:33.457 +07 [16484] РћРџР•Р РђРўРћР :  BEGIN;
+	
+	DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		performer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:23:45.049 +07 [16484] РћРЁРР‘РљРђ:  С‚РµРєСѓС‰Р°СЏ С‚СЂР°РЅР·Р°РєС†РёСЏ РїСЂРµСЂРІР°РЅР°, РєРѕРјР°РЅРґС‹ РґРѕ РєРѕРЅС†Р° Р±Р»РѕРєР° С‚СЂР°РЅР·Р°РєС†РёРё РёРіРЅРѕСЂРёСЂСѓСЋС‚СЃСЏ
+2023-03-13 23:23:45.049 +07 [16484] РћРџР•Р РђРўРћР :  BEGIN;
+	
+	DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		performer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:24:05.590 +07 [16484] РћРЁРР‘РљРђ:  С‚РµРєСѓС‰Р°СЏ С‚СЂР°РЅР·Р°РєС†РёСЏ РїСЂРµСЂРІР°РЅР°, РєРѕРјР°РЅРґС‹ РґРѕ РєРѕРЅС†Р° Р±Р»РѕРєР° С‚СЂР°РЅР·Р°РєС†РёРё РёРіРЅРѕСЂРёСЂСѓСЋС‚СЃСЏ
+2023-03-13 23:24:05.590 +07 [16484] РћРџР•Р РђРўРћР :  BEGIN;
+	
+	DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		performer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	COMMIT
+	
+2023-03-13 23:24:15.436 +07 [16484] РћРЁРР‘РљРђ:  С‚РµРєСѓС‰Р°СЏ С‚СЂР°РЅР·Р°РєС†РёСЏ РїСЂРµСЂРІР°РЅР°, РєРѕРјР°РЅРґС‹ РґРѕ РєРѕРЅС†Р° Р±Р»РѕРєР° С‚СЂР°РЅР·Р°РєС†РёРё РёРіРЅРѕСЂРёСЂСѓСЋС‚СЃСЏ
+2023-03-13 23:24:15.436 +07 [16484] РћРџР•Р РђРўРћР :  DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		performer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+	
+2023-03-13 23:24:37.315 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-13 23:24:44.671 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 62 (0.4%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=6.657 сек., синхр.=0.574 сек., всего=7.356 сек.; синхронизировано_файлов=44, самая_долгая_синхр.=0.062 сек., средняя=0.014 сек.; расстояние=216 kB, ожидалось=3104 kB
+2023-03-13 23:25:21.569 +07 [16484] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:25:21.569 +07 [15876] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:25:21.569 +07 [5268] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:25:21.569 +07 [20012] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:29:37.681 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-13 23:29:46.664 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 71 (0.4%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=7.670 сек., синхр.=0.557 сек., всего=8.983 сек.; синхронизировано_файлов=43, самая_долгая_синхр.=0.047 сек., средняя=0.013 сек.; расстояние=305 kB, ожидалось=2824 kB
+2023-03-13 23:30:06.855 +07 [16040] РћРЁРР‘РљРђ:  СѓРґР°Р»РёС‚СЊ РѕР±СЉРµРєС‚ С‚Р°Р±Р»РёС†Р° genre РЅРµР»СЊР·СЏ, С‚Р°Рє РєР°Рє РѕС‚ РЅРµРіРѕ Р·Р°РІРёСЃСЏС‚ РґСЂСѓРіРёРµ РѕР±СЉРµРєС‚С‹
+2023-03-13 23:30:06.855 +07 [16040] РџРћР”Р РћР‘РќРћРЎРўР:  РѕРіСЂР°РЅРёС‡РµРЅРёРµ genre_performer_genre_id_fkey РІ РѕС‚РЅРѕС€РµРЅРёРё С‚Р°Р±Р»РёС†Р° genre_performer Р·Р°РІРёСЃРёС‚ РѕС‚ РѕР±СЉРµРєС‚Р° С‚Р°Р±Р»РёС†Р° genre
+2023-03-13 23:30:06.855 +07 [16040] РџРћР”РЎРљРђР—РљРђ:  Р”Р»СЏ СѓРґР°Р»РµРЅРёСЏ Р·Р°РІРёСЃРёРјС‹С… РѕР±СЉРµРєС‚РѕРІ РёСЃРїРѕР»СЊР·СѓР№С‚Рµ DROP ... CASCADE.
+2023-03-13 23:30:06.855 +07 [16040] РћРџР•Р РђРўРћР :  DROP TABLE IF EXISTS genre;
+	DROP TABLE IF EXISTS performer;
+	DROP TABLE IF EXISTS genre_performer;
+	DROP TABLE IF EXISTS album;
+	DROP TABLE IF EXISTS performer_album;
+	DROP TABLE IF EXISTS track_list;
+	DROP TABLE IF EXISTS collection;
+	DROP TABLE IF EXISTS collection_track_list;
+	
+	CREATE TABLE genre
+	(
+		genre_id serial PRIMARY KEY,
+		title_genre varchar(64) NOT NULL
+	);
+	
+	CREATE TABLE performer
+	(
+		performer_id serial PRIMARY KEY,
+		name text NOT NULL
+	);
+	
+	CREATE TABLE genre_performer
+	(
+		genre_id int REFERENCES genre(genre_id),
+		performer_id int REFERENCES performer(performer_id),
+		
+		CONSTRAINT genre_performer_pkey PRIMARY KEY (genre_id, performer_id)
+	);
+	
+	CREATE TABLE album
+	(
+		album_id serial PRIMARY KEY,
+		title_album varchar(64) NOT NULL,
+		year_of_release int NOT NULL 
+	);
+	
+	CREATE TABLE performer_album
+	(
+		performer_id int REFERENCES performer(performer_id),
+		album_id int REFERENCES album(album_id),
+		
+		CONSTRAINT performer_album_pkey PRIMARY KEY (performer_id, album_id)
+	);
+	
+	CREATE TABLE track_list
+	(
+		track_list_id serial PRIMARY KEY,
+		title_track text NOT NULL,
+		duration int NOT NULL,
+		album_id int REFERENCES album(album_id)
+	);
+	
+	CREATE TABLE collection
+	(
+		collection_id serial PRIMARY KEY,
+		collection_title varchar(64) NOT NULL,
+		year_of_release int NOT NULL
+	);
+	
+	CREATE TABLE collection_track_list
+	(
+		collection_id int REFERENCES collection(collection_id),
+		track_list_id int REFERENCES track_list(track_list_id),
+		
+		CONSTRAINT collection_track_list_pkey PRIMARY KEY (collection_id, track_list_id)
+	);
+	
+2023-03-13 23:32:44.922 +07 [11140] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:32:44.923 +07 [16040] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:32:44.923 +07 [24108] РЎРћРћР‘Р©Р•РќРР•:  РЅРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ РѕС‚ РєР»РёРµРЅС‚Р°: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:32:44.968 +07 [23336] СООБЩЕНИЕ:  не удалось получить данные от клиента: An existing connection was forcibly closed by the remote host.
+	
+2023-03-13 23:34:37.679 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-13 23:34:50.878 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 98 (0.6%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=10.596 сек., синхр.=0.810 сек., всего=13.200 сек.; синхронизировано_файлов=48, самая_долгая_синхр.=0.102 сек., средняя=0.017 сек.; расстояние=542 kB, ожидалось=2595 kB
+2023-03-13 23:44:37.889 +07 [6032] СООБЩЕНИЕ:  начата контрольная точка: time
+2023-03-13 23:44:40.908 +07 [6032] СООБЩЕНИЕ:  контрольная точка завершена: записано буферов: 21 (0.1%); добавлено файлов WAL 0, удалено: 0, переработано: 0; запись=2.293 сек., синхр.=0.234 сек., всего=3.019 сек.; синхронизировано_файлов=8, самая_долгая_синхр.=0.053 сек., средняя=0.030 сек.; расстояние=45 kB, ожидалось=2340 kB
