@@ -1,6 +1,6 @@
 import requests
 
-token = 'y0_AgAAAAAWHDuNAADLWwAAAADbUSy5AsuaGXp1QMakBiv8qdr4pCKbV4M'
+token = '...'
 common_url = 'https://cloud-api.yandex.net/v1/'
 path_on_yadisk = '/homework/Ошибка_параллели.docx'
 path_on_computer = 'D:/Книга_1/Ошибка_параллели.docx'
