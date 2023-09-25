@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import fake_headers
 import json
 from tqdm import tqdm
-from pprint import pprint
 
 if __name__ == '__main__':
     url = 'https://spb.hh.ru/search/vacancy?text=python&area=1&area=2&page=0'
