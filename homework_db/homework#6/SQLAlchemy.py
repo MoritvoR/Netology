@@ -18,7 +18,14 @@ engine = sq.create_engine(DSN)
 
 Session = sessionmaker(bind=engine)
 
-if input('Необходимо создать таблицы?(да\нет): ').lower() == 'да':
+in_put = input('Необходимо создать таблицы?(да\нет): ')
+while in_put.lower() != 'да':
+    if in_put == 'нет':
+        break
+    else:
+        in_put = input('Вы ввели какую-то дичь! Повторите ввод. Необходимо '
+                       'создать таблицы?(да/нет)')
+if in_put.lower() == 'да':
     create_tables(engine)
 
 if input('Необходимо заполнить таблицы тестовыми данными?(да/нет): ').lower()\
