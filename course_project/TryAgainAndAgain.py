@@ -18,10 +18,10 @@ class YandexMovements:
         response = requests.put(url=self.url_create_folder, headers=self.headers, params=params)
         if response.status_code == 201:
             print(f'Папка {name_folder} на Я.Диске создана успешно')
-            return None
+            return response
         else:
             print(response.json().get('message'))
-            return None
+            return response
 
     def upload_to_disk(self, file_urls: list, file_names, name_folder: str):
         """Upload file on Yandex Disk
