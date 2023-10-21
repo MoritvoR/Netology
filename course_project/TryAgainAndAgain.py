@@ -13,7 +13,7 @@ class YandexMovements:
 
     def create_folder(self, name_folder: str):
         """Create new folder on Yandex Disk.
-        Return None"""
+        Return response"""
         params = {'path': f'/{name_folder}'}
         response = requests.put(url=self.url_create_folder, headers=self.headers, params=params)
         if response.status_code == 201:

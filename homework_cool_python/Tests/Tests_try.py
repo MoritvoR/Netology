@@ -1,9 +1,10 @@
 from course_project.TryAgainAndAgain import YandexMovements
 import requests
+from pytest import mark
 
 
 def test_create_folder(name_folder='test_folder'):
-    ya_token = ''
+    ya_token = input('Введите токен для яндекс диска:')
     creator_new_folder = YandexMovements(ya_token)
     result = creator_new_folder.create_folder(name_folder)
     assert result.status_code == 201, f'Код ошибки:{result.status_code}. ' \
@@ -21,3 +22,11 @@ def test_create_folder(name_folder='test_folder'):
             name = i['name']
             break
     assert name == name_folder, 'Папка не создана!'
+
+
+@mark.xfail
+def test_fail_create_folder(name_folder='test_folder'):
+    ya_token = 'fgfgfgfgfgfgfgfgfgfgfgfg'
+    creator_new_folder = YandexMovements(ya_token)
+    result = creator_new_folder.create_folder(name_folder)
+    assert result.status_code == 201
