@@ -21,7 +21,7 @@ def get_shops(data: str, db_session):
 
 if __name__ == '__main__':
     print('Добро пожаловать!')
-    '''name_driver = input('Введите имя драйвера подключения: ')
+    name_driver = input('Введите имя драйвера подключения: ')
     name_login = input('Введите логин пользователя: ')
     password = input('Введите пароль пользователя: ')
     host_name = input('Введите имя хоста: ')
@@ -29,8 +29,7 @@ if __name__ == '__main__':
     name_db = input('Введите имя базы данных: ')
     
     DSN = f'{name_driver}://{name_login}:{password}@{host_name}:' \
-          f'{server_port}/{name_db}'''
-    DSN = 'postgresql://postgres:1225@localhost:5432/homework'
+          f'{server_port}/{name_db}'
 
     engine = sq.create_engine(DSN)
     Session = sessionmaker(bind=engine)
